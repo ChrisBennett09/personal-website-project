@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+}
+
+.logo {
+  color: rgb(235, 230, 230);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(235, 230, 230);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(235, 230, 230);
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .profile-img, .dark-lawn-img {
+    width: 10px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.bg {
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%), linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  padding-bottom: 5px;
+}
+
+article {
+  margin: 10px;
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dark-lawn-img {
+  width: 800px;
+  display: block;
+}
+
+.center-title {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-img {
+  width: 550px;
+  padding: 10px 0 0 10px;
+}
+
+figcaption {
+  padding: 0 10px;
+}
+
+img {
+  width: 500px;
+}
+
+.bigger-img {
+  width: 800px;
+}
+
+.inline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.top-padding {
+  padding-top: 50px;
+}
