@@ -54,17 +54,6 @@ nav {
   margin: 5px;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    list-style: none;
-  }
-}
-
 .nav-active {
   transform: translateX(0%);
 }
@@ -81,78 +70,13 @@ nav {
   }
 }
 
-.bg {
-  background-color: #fff;
-  background-image: linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%), linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  height: 100%;
-}
-
-h1 {
-  padding-bottom: 5px;
-}
-
-h4 {
-  padding-bottom: 20px;
-}
-article {
-  margin: 10px;
-}
-
-footer {
-  position: relative;
-  margin-top: 100px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-
-
-.center-title {
-  text-align: center;
-  padding: 50px 0 50px 0;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-
-figcaption {
-  padding: 0 10px;
-}
-
-img {
-  width: 500px;
-}
-
-.bigger-img {
-  width: 800px;
-}
-
-.ford-img {
-  width: 100px;
-  height: 25px;
-}
-
-.inline {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.top-padding {
-  padding-top: 50px;
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -191,3 +115,75 @@ img {
     cursor: pointer;
   }
 }
+
+.bg {
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%), linear-gradient(45deg, #F5FFFA 25%, transparent 25%, transparent 75%, #F5FFFA 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  padding-bottom: 5px;
+}
+
+h4 {
+  padding-bottom: 20px;
+}
+article {
+  margin: 10px;
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.center-title {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+figcaption {
+  padding: 0 10px;
+}
+
+img {
+  width: 500px;
+}
+
+.bigger-img {
+  width: 800px;
+}
+
+.ford-img {
+  width: 100px;
+  height: 25px;
+}
+
+.inline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.top-padding {
+  padding-top: 50px;
+}
+
